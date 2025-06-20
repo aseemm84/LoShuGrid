@@ -151,12 +151,13 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         Please provide a comprehensive reading covering the following aspects:
 
         ## 1. Individual Squares Deep Analysis (all 9 squares in the grid)
-        Based on associated Planet, Element, Direction, Season, Colors, Symbolism, Strengthof Square (based on count of Number in the square).
+        Deep analysis about the person based on associated Planet, Element, Direction, Season, Colors, Symbolism, Strengthof Square (based on count of Number in the square).
         ## 2. Planes Significance Analysis
-        For all Horizontal (Mind: 4-9-2, Emotional: 3-5-7 and Material: 8-1-6) Planes,
-        Vertical (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6) Planes and
-        Diagonal (Golden: 4-5-6 and Silver: 2-5-8) Planes.
-        This analysis is based on the completeness, partial completeness or absence of a plane.
+        Perform a deep analysis about the person for all
+        -Horizontal (Mind: 4-9-2, Emotional: 3-5-7 and Material: 8-1-6) Planes,
+        -Vertical (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6) Planes and
+        -Diagonal (Golden: 4-5-6 and Silver: 2-5-8) Planes.
+        This analysis must be based on the completeness, partial completeness or absence of a plane.
         Also, this analysis should be based on the strength of the plane (derived from the count of numbers in each square of the plane).
         ## 3. Psychic Number Analysis ({psychic})
         Explain the deep meaning of their birth day number, inner desires, natural instincts, and how others perceive them.
