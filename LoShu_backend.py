@@ -129,7 +129,7 @@ def check_planes(counts):
 # --- AI Interpretation Function ---
 
 def generate_interpretation(name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes):
-    """Fetches a numerological interpretation from the Gemini API."""
+    """Fetches a numerological interpretation"""
     grid_data = ", ".join([f"{num} (appears {count} time{'s' if count > 1 else ''})" for num, count in counts.items() if count > 0])
     missing_numbers = ", ".join([str(num) for num, count in counts.items() if count == 0])
     completed_planes_str = ", ".join(planes) if planes else 'None'
