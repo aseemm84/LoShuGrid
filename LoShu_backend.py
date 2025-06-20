@@ -6,6 +6,7 @@ import pandas as pd
 import requests
 import json
 from datetime import datetime
+import streamlit as st
 
 
 groq = st.secrets["Groq_API_Key"]
