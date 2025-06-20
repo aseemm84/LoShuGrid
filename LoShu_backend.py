@@ -180,3 +180,5 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         ## Summary and Overall Guidance
         Provide a concluding summary that synthesizes the key points of the reading. Offer one or two key pieces of actionable advice for {name} to lead a more fulfilling life based on their unique numerological chart.
     """
+    prompt = ChatPromptTemplate.from_template(template)
+    chain = prompt | llm
