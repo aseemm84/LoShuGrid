@@ -134,7 +134,7 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
     missing_numbers = ", ".join([str(num) for num, count in counts.items() if count == 0])
     completed_planes_str = ", ".join(planes) if planes else 'None'
     
-    prompt = f"""
+    template = f"""
         You are an expert numerologist specializing in the Lo Shu Grid system. 
         Provide a detailed, insightful, and positive analysis for a person with the following details. 
         Structure the response with clear headings (using ## for main headings and ### for sub-headings) and paragraphs.
