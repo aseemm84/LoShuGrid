@@ -160,8 +160,6 @@ if submit_button:
                     interpretation = LoShu_backend.generate_interpretation(
                         name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
                     )
-                    
-                    # To properly display the markdown from the backend prompt
                     st.write(interpretation)
 
         except ValueError:
