@@ -1,0 +1,10 @@
+streamlit
+cohere
+python-dotenv
+PyPDF2
+Pillow
+langchain-groq
+langchain-core
+langchain
+google-generativeai
+langchain-community
