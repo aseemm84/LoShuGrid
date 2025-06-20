@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from LoShu_backend import calculate_numbers, build_grid_dataframe, check_planes, generate_interpretation
+import LoShu_backend
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(
