@@ -157,7 +157,7 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         Vertical (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6) Planes and
         Diagonal (Golden: 4-5-6 and Silver: 2-5-8) Planes.
         This analysis is based on the completeness, partial completeness or absence of a plane.
-        Also, this analysis should be based on the strength of the plane (drived from count of numbers in each square of the plane).
+        Also, this analysis should be based on the strength of the plane (derived from the count of numbers in each square of the plane).
         ## 3. Psychic Number Analysis ({psychic})
         Explain the deep meaning of their birth day number, inner desires, natural instincts, and how others perceive them.
         ## 4. Destiny Number Analysis ({destiny})
@@ -167,15 +167,15 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         ## 6. Kua Number Analysis ({kua})
         Provide comprehensive Feng Shui guidance including:
         - Personal energy type and characteristics
-        - Favorable directions for sleeping, working, and facing
-        - Compatible elements and colors
-        - Best locations in home and office
+        - Favourable directions for sleeping, working, and facing
+        - Compatible elements and colours
+        - Best locations in the home and office
         ## 7. Present Numbers Strengths Analysis
-        For each present number in {present_numbers}, explain:
+        For each present number in the grid, explain:
         - Natural talents and abilities it provides
         - How it manifests in their personality
         - Career advantages it offers
-        - Specific ways to maximize this gift
+        - Specific ways to maximise this gift
         ## 8. Missing Numbers Growth Areas Analysis  
         For each missing number in {missing_numbers}, provide:
         - What quality needs development
