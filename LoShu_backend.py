@@ -67,14 +67,11 @@ def calculate_numbers(name, day, month, year, gender):
             kua = 1
         if kua > 9:
             kua = reduce_to_digit(kua)
-        if kua == 5:
-            kua = 2
     else:  # female
         kua = 4 + year_sum
         if kua > 9:
              kua = reduce_to_digit(kua)
-        if kua == 5:
-            kua = 8
+        
 
     # IMPORTANT: The Name Number and Kua number are included in the list for the grid.
     all_nums = [d for d in digits if d > 0] + [psychic, destiny, kua, name_number]
@@ -97,7 +94,7 @@ def build_grid_dataframe(counts):
         for num in row:
             count = counts.get(num, 0)
             if count == 0:
-                grid_row.append("—")
+                grid_row.append("")
             elif count == 1:
                 grid_row.append(str(num))
             else:
