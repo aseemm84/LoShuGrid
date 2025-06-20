@@ -179,15 +179,16 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | llm
     response = chain.invoke({
-         "name": name,
-         "day": day,
-         "month": month,
-         "year": year,
-         "gender": gender,
-         "psychic": psychic,
-         "destiny": destiny,
-         "kua": kua,
-         "name_number": name_number,
-         "counts": counts,
-         "planes": planes
+        "name": name,
+        "day": day,
+        "month": month,
+        "year": year,
+        "gender": gender,
+        "psychic": psychic,
+        "destiny": destiny,
+        "kua": kua,
+        "name_number": name_number,
+        "counts": counts,
+        "planes": planes
         })
+    return response.content
