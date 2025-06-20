@@ -150,7 +150,6 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         - Kua Number: {kua}
         - Numbers in their chart: {grid_data or 'None'}
         - Missing Numbers: {missing_numbers or 'None'}
-        - Completed Planes: {completed_planes_str}
         
         **Analysis Request:**
         Please provide a comprehensive reading covering the following aspects:
