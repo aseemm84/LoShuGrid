@@ -150,64 +150,64 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         **Analysis Request:**
         Please provide a comprehensive reading covering the following aspects:
 
-        ## 1. Individual Squares Deep Analysis (all 9 squares in the grid)
-        Deep analysis about the person based on associated Planet, Element, Direction, Season, Colors, Symbolism, Strengthof Square (based on count of Number in the square).
-        ## 2. Planes Significance Analysis
-        Perform a deep analysis about the person for all
-        -Horizontal (Mind: 4-9-2, Emotional: 3-5-7 and Material: 8-1-6) Planes,
-        -Vertical (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6) Planes and
-        -Diagonal (Golden: 4-5-6 and Silver: 2-5-8) Planes.
-        This analysis must be based on the completeness, partial completeness or absence of a plane.
-        Also, this analysis should be based on the strength of the plane (derived from the count of numbers in each square of the plane).
-        ## 3. Psychic Number Analysis ({psychic})
-        Explain the deep meaning of their birth day number, inner desires, natural instincts, and how others perceive them.
-        ## 4. Destiny Number Analysis ({destiny})
-        Detail their life purpose, karmic lessons, ultimate goals, and the path their soul chose for this lifetime.
-        ## 5. Name Number Analysis ({name_number})
-        Analyze how the vibration of "{name}" influences their expression, talents, and interaction with the world.
-        ## 6. Kua Number Analysis ({kua})
-        Provide comprehensive Feng Shui guidance including:
-        - Personal energy type and characteristics
-        - Favourable directions for sleeping, working, and facing
-        - Compatible elements and colours
-        - Best locations in the home and office
-        ## 7. Present Numbers Strengths Analysis
-        For each present number in the grid, explain:
-        - Natural talents and abilities it provides
-        - How it manifests in their personality
-        - Career advantages it offers
-        - Specific ways to maximise this gift
-        ## 8. Missing Numbers Growth Areas Analysis  
-        For each missing number in {missing_numbers}, provide:
-        - What quality needs development
-        - Specific challenges this absence creates
-        - Three practical remedies to cultivate this energy
-        - Reassurance about growth potential
-        ## 9. Completed Planes Special Powers Analysis
-        For completed planes in grid:
-        - Rare abilities and exceptional talents
-        - How to use these gifts responsibly
-        - Career paths that align with these powers
-        - Leadership potential and social impact
-        ## 10. Individual Square Strength Assessment
-        Rate each square's strength (Weak/Moderate/Strong/Very Strong) based on frequency counts and explain:
-        - How this strength level affects their life
-        - Optimal ways to leverage strong squares
-        - Methods to strengthen weak squares
-        ## 11. Holistic Life Integration Reading
-        Synthesize all elements into a comprehensive life guidance covering:
-        - Their unique energetic signature
-        - How all numbers work together synergistically  
-        - Life themes and recurring patterns
-        - Relationship compatibility insights
-        - Career and financial guidance
-        - Health and wellness recommendations
-        - Spiritual development path
-        - Key life lessons and growth opportunities
-        - Timing for major life decisions
-        - Personal mantras and affirmations
-        ## 12. Summary and Overall Guidance
-        Provide a concluding summary that synthesizes the key points of the reading. Offer one or two key pieces of actionable advice for {name} to lead a more fulfilling life based on their unique numerological chart.
+        ## 1. Individual Squares Analysis  
+For each square (1–9), provide:  
+### Square  
+- Planet, Element, Direction, Season, Symbolic Colors  
+- Life area (e.g., Wealth, Relationships, Creativity)  
+- Strength level (based on count) and its influence  
+- Real-life example or anecdote demonstrating this energy  
+
+## 2. Plane Significance  
+### Horizontal Planes (Mind, Emotional, Material)  
+Discuss completeness and strength, linking to memory, feelings, practical skills.  
+### Vertical Planes (Thought, Willpower, Expression)  
+Analyze determination, planning, communication, and emotional expression.  
+### Diagonal Planes (Golden, Silver Yog)  
+Explain rare combinations, property success, fame, and how to harness them.  
+
+## 3. Core Number Analysis  
+### Psychic Number ({psychic})  
+Inner self, desires, and interpersonal perception.  
+### Destiny Number ({destiny})  
+Life purpose, karmic lessons, and ultimate goals.  
+### Name Number ({name_number})  
+Talents, modes of expression, and professional potential.  
+### Kua Number ({kua})  
+Personal energy type, favorable directions, compatible elements, and Feng Shui tips.  
+
+## 4. Life Domains  
+### Education & Learning  
+Assess learning style, optimal study methods, and academic strengths.  
+### Career & Profession  
+Identify suitable fields, work style, leadership qualities, and entrepreneurial potential.  
+### Finances & Wealth  
+Evaluate money management, investment outlook, property and luxury inclinations, legal considerations.  
+### Travel & Exploration  
+Indicate favorable travel directions, how journeys support growth, and auspicious timing.  
+### Family & Relationships  
+Examine marriage prospects, parenting style, interpersonal harmony, and children’s guidance.  
+### Health & Wellness  
+Recommend routines, physical and mental health strategies, stress management, and longevity practices.  
+### Age-Related Phases  
+Highlight life periods of opportunity and challenge based on numerological cycles.  
+### Challenges & Opportunities  
+Summarize major life tests and potential breakthroughs, with targeted remedies and affirmations.  
+
+## 5. Completed vs. Missing Planes  
+- Completed Planes: Unique talents, career advantages, social impact.  
+- Incomplete Planes: Remedies, daily rituals, environmental adjustments (colors, directions, elements).  
+
+## 6. Holistic Synthesis  
+Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.  
+
+## 7. Action Plan & Affirmations  
+- **Immediate Steps (Next 30 Days):** Three concrete actions.  
+- **Long-Term Goals (Next Year):** Major milestones aligned with numerology.  
+- **Personal Mantras:** Two–three affirmations bespoke to the individual.  
+
+## Final Wisdom  
+Conclude with an inspiring message that highlights the person’s soul mission, unique gifts, and the pathways to a fulfilling, balanced life.
         **Final Wisdom:**
         Conclude with an inspiring message about their unique gifts, soul purpose, and the beautiful journey their numbers reveal.
         Please ensure every section provides specific, actionable insights tailored to this person's unique numerological blueprint.
