@@ -38,8 +38,7 @@ NAME_CHART = {
 
 def reduce_to_digit(n):
     """Reduces a number to a single digit by summing its digits repeatedly."""
-    # Master numbers 11 and 22 are exceptions and are not reduced.
-    while n > 9 and n not in [11, 22]:
+    while n > 9:
         n = sum(int(d) for d in str(n))
     return n
 
