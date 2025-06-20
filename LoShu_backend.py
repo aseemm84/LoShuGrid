@@ -159,11 +159,11 @@ For each square (1–9), provide:
 - Real-life example or anecdote demonstrating this energy  
 
 ## 2. Plane Significance  
-### Horizontal Planes (Mind: 4-9-2, Emotional: 3-5-7 and Material: 8-1-6)  
+### Horizontal Planes (Mind, Emotional and Material)  
 Discuss completeness and strength, linking to memory, feelings, practical skills.  
-### Vertical Planes (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6)  
+### Vertical Planes (Thought, Willpower and Expression)  
 Analyze determination, planning, communication, and emotional expression.  
-### Diagonal Planes (Determination: 4-5-6, Compassion: 2-5-8)  
+### Diagonal Planes (Determination, Compassion)  
 Explain rare combinations, property success, fame, and how to harness them.  
 
 ## 3. Core Number Analysis  
