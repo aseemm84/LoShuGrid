@@ -172,10 +172,10 @@ st.sidebar.info("""
 Welcome to the Lo Shu Grid Numerology Calculator,  an intuitive web application designed to reveal deep numerological insights based on your date of birth and personal numbers. This app combines ancient Chinese numerology—specifically the magic square pattern known as the Lo Shu Grid—with modern AI analysis to offer a holistic personality and life-path reading.
 
 Key Features:
-- **Automated Grid Creation: Instantly generates your personalized 3×3 numeric grid from birth date digits, Psychic Number, Destiny Number, and Kua Number.
-- **Visual Strength Mapping: Elegantly color-codes each square to highlight areas of natural aptitude and growth opportunities.
-- **AI-Powered Analysis: Leverages a state-of-the-art language model to produce warm, actionable, and deeply personalized interpretations of every number, square, and plane in your chart.
-- **Holistic Guidance: Provides recommendations for career, relationships, health, and spiritual development tailored to your unique numerological profile.
+- **Automated Grid Creation: Instantly generates your personalized 3×3 numeric grid from birth date digits, Psychic Number, Destiny Number, and Kua Number.**
+- **Visual Strength Mapping: Elegantly color-codes each square to highlight areas of natural aptitude and growth opportunities.**
+- **AI-Powered Analysis: Leverages a state-of-the-art language model to produce warm, actionable, and deeply personalized interpretations of every number, square, and plane in your chart.**
+- **Holistic Guidance: Provides recommendations for career, relationships, health, and spiritual development tailored to your unique numerological profile.**
 
 Simply enter your birth details and let the Lo Shu Grid Numerology Calculator app guide you towards greater self-understanding and purposeful living.
 """)
