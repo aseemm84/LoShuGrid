@@ -123,9 +123,9 @@ if submit_button:
             
             with st.spinner("Calculating your numerology report... This may take a moment."):
                 # --- Backend Calculations ---
-                counts, psychic, destiny, kua, name_number = backend.calculate_numbers(name, day, month, year, gender)
-                grid_df = backend.build_grid_dataframe(counts)
-                planes = backend.check_planes(counts)
+                counts, psychic, destiny, kua, name_number = LoShu_backend.calculate_numbers(name, day, month, year, gender)
+                grid_df = LoShu_backend.build_grid_dataframe(counts)
+                planes = LoShu_backend.check_planes(counts)
                 
                 # --- Display Core Numbers and Grid ---
                 with st.container():
@@ -157,7 +157,7 @@ if submit_button:
                     st.header("Your Detailed Numerology Reading")
                     
                     # Call the backend function to get the AI interpretation
-                    interpretation = backend.generate_interpretation(
+                    interpretation = LoShu_backend.generate_interpretation(
                         name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
                     )
                     
