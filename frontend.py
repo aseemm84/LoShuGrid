@@ -162,7 +162,7 @@ if submit_button:
                     )
                     
                     # To properly display the markdown from the backend prompt
-                    st.markdown(interpretation)
+                    st.write(interpretation)
 
         except ValueError:
             st.error("Invalid date. Please check the day, month, and year.")
