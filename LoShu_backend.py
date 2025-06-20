@@ -132,10 +132,9 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
     completed_planes_str = ", ".join(planes) if planes else 'None'
     
     template = f"""
-        You are an expert numerologist specializing in the Lo Shu Grid system. 
-        Provide a detailed, insightful, and positive analysis for a person with the following details. 
-        Structure the response with clear headings (using ## for main headings and ### for sub-headings) and paragraphs.
-        Do not use markdown for bolding, use plain text.
+        You are a master numerologist with deep expertise in Lo Shu Grid analysis, Chinese metaphysics, and Vedic numerology. Provide a detailed, insightful, and holistic analysis of a person's complete numerological profile. 
+        Write in a warm, encouraging, and empowering tone with clear structure using ## for main headings and ### for sub-headings. Use plain text without markdown bolding. 
+        
         
         **Person's Data:**
         - First Name: {name}
@@ -150,31 +149,67 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         
         **Analysis Request:**
         Please provide a comprehensive reading covering the following aspects:
-        
-        ## Core Personality Analysis
-        ### Psychic Number ({psychic})
-        Explain what the Psychic number reveals about their inner self, desires, and basic character.
-        ### Destiny Number ({destiny})
-        Explain what the Destiny number reveals about their life's purpose, path, and the lessons they are here to learn.
-        ### Name Number ({name_number})
-        Explain what the Name Number (derived from '{name}') reveals about their talents, abilities, and potential in the world. This is their mode of expression.
-        ### Kua Number ({kua})
-        Briefly explain what the Kua number suggests about their personal energy and compatibility with directions.
-        
-        ## The Lo Shu Grid Breakdown
-        ### Strengths (Based on Present Numbers)
-        Analyze the meaning of the numbers present in their grid ({grid_data}). What strengths and talents do these numbers indicate?
-        ### Challenges (Based on Missing Numbers)
-        Analyze the meaning of the numbers missing from their grid ({missing_numbers}). What challenges or areas for growth do these absences suggest?
-        
-        ## Analysis of Planes
-        ### Completed Planes Analysis
-        If there are completed planes ({completed_planes_str}), explain the powerful characteristics and abilities these bestow upon the individual.
-        ### Guidance for Missing Planes
-        If there are no completed planes, offer constructive advice on how the person can compensate for the energies of missing planes in their life.
-        
-        ## Summary and Overall Guidance
+
+        ## 1. Individual Squares Deep Analysis (all 9 squares in the grid)
+        Based on associated Planet, Element, Direction, Season, Colors, Symbolism, Strengthof Square (based on count of Number in the square).
+        ## 2. Planes Significance Analysis
+        For all Horizontal (Mind: 4-9-2, Emotional: 3-5-7 and Material: 8-1-6) Planes,
+        Vertical (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6) Planes and
+        Diagonal (Golden: 4-5-6 and Silver: 2-5-8) Planes.
+        This analysis is based on the completeness, partial completeness or absence of a plane.
+        Also, this analysis should be based on the strength of the plane (drived from count of numbers in each square of the plane).
+        ## 3. Psychic Number Analysis ({psychic})
+        Explain the deep meaning of their birth day number, inner desires, natural instincts, and how others perceive them.
+        ## 4. Destiny Number Analysis ({destiny})
+        Detail their life purpose, karmic lessons, ultimate goals, and the path their soul chose for this lifetime.
+        ## 5. Name Number Analysis ({name_number})
+        Analyze how the vibration of "{name}" influences their expression, talents, and interaction with the world.
+        ## 6. Kua Number Analysis ({kua})
+        Provide comprehensive Feng Shui guidance including:
+        - Personal energy type and characteristics
+        - Favorable directions for sleeping, working, and facing
+        - Compatible elements and colors
+        - Best locations in home and office
+        ## 7. Present Numbers Strengths Analysis
+        For each present number in {present_numbers}, explain:
+        - Natural talents and abilities it provides
+        - How it manifests in their personality
+        - Career advantages it offers
+        - Specific ways to maximize this gift
+        ## 8. Missing Numbers Growth Areas Analysis  
+        For each missing number in {missing_numbers}, provide:
+        - What quality needs development
+        - Specific challenges this absence creates
+        - Three practical remedies to cultivate this energy
+        - Reassurance about growth potential
+        ## 9. Completed Planes Special Powers Analysis
+        For completed planes in {completed_planes}:
+        - Rare abilities and exceptional talents
+        - How to use these gifts responsibly
+        - Career paths that align with these powers
+        - Leadership potential and social impact
+        ## 10. Individual Square Strength Assessment
+        Rate each square's strength (Weak/Moderate/Strong/Very Strong) based on frequency counts and explain:
+        - How this strength level affects their life
+        - Optimal ways to leverage strong squares
+        - Methods to strengthen weak squares
+        ## 11. Holistic Life Integration Reading
+        Synthesize all elements into a comprehensive life guidance covering:
+        - Their unique energetic signature
+        - How all numbers work together synergistically  
+        - Life themes and recurring patterns
+        - Relationship compatibility insights
+        - Career and financial guidance
+        - Health and wellness recommendations
+        - Spiritual development path
+        - Key life lessons and growth opportunities
+        - Timing for major life decisions
+        - Personal mantras and affirmations
+        ## 12. Summary and Overall Guidance
         Provide a concluding summary that synthesizes the key points of the reading. Offer one or two key pieces of actionable advice for {name} to lead a more fulfilling life based on their unique numerological chart.
+        **Final Wisdom:**
+        Conclude with an inspiring message about their unique gifts, soul purpose, and the beautiful journey their numbers reveal.
+        Please ensure every section provides specific, actionable insights tailored to this person's unique numerological blueprint.
     """
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | llm
