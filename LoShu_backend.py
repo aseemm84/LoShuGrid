@@ -158,10 +158,10 @@ For each square (1–9), provide:
 - Strength level (based on count) and its influence  
 - Real-life example or anecdote demonstrating this energy  
 
-## 2. Plane Significance  
-### Horizontal Planes (Mind, Emotional and Material)  
+## 2. Plane Significance {completed_planes_str}  
+### Analyze the person's {name} Horizontal Planes (Mental, Emotional and Practical)  
 Discuss completeness and strength, linking to memory, feelings, practical skills.  
-### Vertical Planes (Thought, Willpower and Expression)  
+### Vertical Planes (Thought, Will and Action)  
 Analyze determination, planning, communication, and emotional expression.  
 ### Diagonal Planes (Determination, Compassion)  
 Explain rare combinations, property success, fame, and how to harness them.  
