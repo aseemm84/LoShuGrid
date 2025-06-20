@@ -159,11 +159,11 @@ For each square (1–9), provide:
 - Real-life example or anecdote demonstrating this energy  
 
 ## 2. Plane Significance  
-### Horizontal Planes (Mind, Emotional, Material)  
+### Horizontal Planes (Mind: 4-9-2, Emotional: 3-5-7 and Material: 8-1-6)  
 Discuss completeness and strength, linking to memory, feelings, practical skills.  
-### Vertical Planes (Thought, Willpower, Expression)  
+### Vertical Planes (Thought: 4-3-8, Willpower: 9-5-1 and Expression: 2-7-6)  
 Analyze determination, planning, communication, and emotional expression.  
-### Diagonal Planes (Golden, Silver Yog)  
+### Diagonal Planes (Determination: 4-5-6, Compassion: 2-5-8)  
 Explain rare combinations, property success, fame, and how to harness them.  
 
 ## 3. Core Number Analysis  
@@ -174,7 +174,8 @@ Life purpose, karmic lessons, and ultimate goals.
 ### Name Number ({name_number})  
 Talents, modes of expression, and professional potential.  
 ### Kua Number ({kua})  
-Personal energy type, favorable directions, compatible elements, and Feng Shui tips.  
+Personal energy type, favorable directions, compatible elements, and Feng Shui tips.
+### Discuss the combinations of these numbers based on the planets they govern and the mutual relationship of those planets.
 
 ## 4. Life Domains  
 ### Education & Learning  
