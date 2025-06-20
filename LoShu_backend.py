@@ -183,7 +183,7 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         - Three practical remedies to cultivate this energy
         - Reassurance about growth potential
         ## 9. Completed Planes Special Powers Analysis
-        For completed planes in {completed_planes}:
+        For completed planes in grid:
         - Rare abilities and exceptional talents
         - How to use these gifts responsibly
         - Career paths that align with these powers
