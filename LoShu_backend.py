@@ -178,3 +178,29 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
     """
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | llm
+    try:
+        response = chain.invoke({
+         "name": name,
+         "day": day,
+         "month": month,
+         "year": year,
+         "gender": gender,
+         "psychic": psychic,
+         "destiny": destiny,
+         "kua": kua,
+         "name_number": name_number,
+         "counts": counts,
+         "planes": planes
+        })
+        # Check for rate limit error in the response content
+        error_message = check_for_rate_limit_error(response.content) 
+        if error_message:
+            return error_message # Return the error string
+        else: 
+            return response.content
+    except Exception as e:
+        error_message = check_for_rate_limit_error(str(e))
+        if error_message:
+            return error_message # Return the error string
+        else: 
+            return f"An error occurred: {e}"
