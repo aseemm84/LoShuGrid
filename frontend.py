@@ -167,8 +167,8 @@ if submit_button:
             
             with st.spinner("Analyzing the cosmos for your report... This may take a moment."):
                 # --- Backend Calculations ---
-                counts, psychic, destiny, kua, name_number = backend.calculate_numbers(name, day, month, year, gender)
-                planes = backend.check_planes(counts)
+                counts, psychic, destiny, kua, name_number = LoShu_backend.calculate_numbers(name, day, month, year, gender)
+                planes = LoShu_backend.check_planes(counts)
                 
                 # --- Display Core Numbers in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
@@ -202,7 +202,7 @@ if submit_button:
                 # --- Generate and Display AI Interpretation in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
                 st.header("Your Detailed Numerology Reading")
-                interpretation = backend.generate_interpretation(
+                interpretation = LoShu_backend.generate_interpretation(
                     name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
                 )
                 st.markdown(interpretation)
