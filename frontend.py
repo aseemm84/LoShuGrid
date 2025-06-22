@@ -8,85 +8,132 @@ st.set_page_config(
     page_title="Lo Shu Grid Numerology",
     layout="wide",
     initial_sidebar_state="collapsed",
+    page_icon = 
 )
 
 # --- Custom CSS for Styling ---
 st.markdown("""
 <style>
-    /* Main container styling */
+    /* --- General Styling --- */
     .stApp {
         background-color: #f0f2f6;
     }
-
-    /* Title styling */
-    h1 {
+    h1, h2, h3 {
         color: #1e3a8a; /* Dark Blue */
         text-align: center;
     }
 
-    /* Subheader styling */
-    h2, h3 {
-        color: #1e3a8a;
-    }
-
-    /* Input widgets styling */
+    /* --- Input Widgets --- */
     .stTextInput > div > div > input, .stNumberInput > div > div > input, .stSelectbox > div > div {
         border-radius: 10px;
         border: 2px solid #93c5fd; /* Light Blue Border */
         background-color: #ffffff;
     }
 
-    /* Button styling */
+    /* --- Button --- */
     .stButton > button {
         border-radius: 10px;
         border: 2px solid #1e3a8a;
-        background-color: #2563eb; /* Blue */
+        background-color: #2563eb;
         color: white;
         font-weight: bold;
         width: 100%;
         padding: 10px 0;
+        transition: background-color 0.3s ease;
     }
     .stButton > button:hover {
-        background-color: #1d4ed8; /* Darker Blue on hover */
+        background-color: #1d4ed8;
         border-color: #1d4ed8;
     }
 
-    /* DataFrame styling */
-    .stDataFrame {
-        text-align: center;
-    }
-    .stDataFrame table {
-        margin: auto;
-        border: 2px solid #1e3a8a;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    .stDataFrame th, .stDataFrame td {
-        text-align: center !important;
-        padding: 15px;
-    }
-    
-    /* Center the button */
-    .stButton {
-        display: flex;
-        justify-content: center;
-    }
-    
-    /* Result containers */
-    .result-container {
+    /* --- Card for Output Sections --- */
+    .card {
         background-color: #ffffff;
-        padding: 2rem;
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        margin-top: 20px;
+        border: 1px solid #e0e0e0;
+    }
+    
+    /* --- Custom Lo Shu Grid --- */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        aspect-ratio: 1 / 1;
+    }
+    .grid-cell {
+        background-color: #f8f9fa;
+        color: #ced4da;
         border-radius: 10px;
-        border: 2px solid #e0e0e0;
-        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 2px solid #e9ecef;
+    }
+    .grid-cell.present {
+        background-color: #e6f9f1;
+        color: #0c854e;
+        border: 2px solid #a3e9d1;
+    }
+    .grid-cell.multiple {
+        background-color: #d1f3e3;
+        color: #0a6b3e;
+        border: 2px solid #77d9b4;
+        font-weight: 900;
+    }
+    .grid-cell-inner {
+        position: relative;
+    }
+    .grid-count {
+        position: absolute;
+        top: -8px;
+        right: -15px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #dd2c00;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 2px 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 </style>
 """, unsafe_allow_html=True)
 
 
+
+def create_grid_html(counts):
+    """Generates a styled HTML representation of the Lo Shu Grid."""
+    grid_layout = [[4, 9, 2], [3, 5, 7], [8, 1, 6]]
+    html = '<div class="grid-container">'
+    for row in grid_layout:
+        for num in row:
+            count = counts.get(num, 0)
+            cell_class = "grid-cell"
+            content = str(num)
+            count_badge = ""
+
+            if count > 0:
+                cell_class += " present"
+                if count > 1:
+                    cell_class += " multiple"
+                    count_badge = f'<span class="grid-count">{count}</span>'
+            else:
+                 content = "—" # Display a dash for missing numbers
+
+            html += f'<div class="{cell_class}"><div class="grid-cell-inner">{content}{count_badge}</div></div>'
+    html += '</div>'
+    return html
+
 # --- UI Layout ---
 
-st.title("Lo Shu Grid Numerology Calculator")
+st.title("AI Powered Lo Shu Grid Numerology Calculator")
 st.write("") # Spacer
 
 # --- Input Form ---
@@ -98,7 +145,7 @@ with st.container():
         month = st.selectbox("Month", options=list(range(1, 13)), index=0)
     with col3:
         current_year = datetime.now().year
-        year = st.number_input("Year", min_value=1900, max_value=current_year, value=2000, step=1)
+        year = st.number_input("Year", min_value=1900, max_value=datetime.now().year, value=2000, step=1)
     with col4:
         gender = st.selectbox("Gender", options=["Male", "Female"])
     with col5:
@@ -111,61 +158,63 @@ with st.container():
 
 
 # --- Processing and Output ---
-
 if submit_button:
-    # --- Input Validation ---
     if not name.strip():
         st.error("Please enter a name.")
     else:
         try:
-            # Validate date
             datetime(year, month, day)
             
-            with st.spinner("Calculating your numerology report... This may take a moment."):
+            with st.spinner("Analyzing the cosmos for your report... This may take a moment."):
                 # --- Backend Calculations ---
-                counts, psychic, destiny, kua, name_number = LoShu_backend.calculate_numbers(name, day, month, year, gender)
-                grid_df = LoShu_backend.build_grid_dataframe(counts)
-                planes = LoShu_backend.check_planes(counts)
+                counts, psychic, destiny, kua, name_number = backend.calculate_numbers(name, day, month, year, gender)
+                planes = backend.check_planes(counts)
                 
-                # --- Display Core Numbers and Grid ---
-                with st.container():
-                    st.markdown("---")
-                    st.header("Your Numerology Chart")
-                    
-                    num_col1, num_col2, num_col3, num_col4 = st.columns(4)
-                    num_col1.metric("Psychic Number", psychic)
-                    num_col2.metric("Destiny Number", destiny)
-                    num_col3.metric("Name Number", name_number)
-                    num_col4.metric("Kua Number", kua)
+                # --- Display Core Numbers in a Card ---
+                st.markdown('<div class="card">', unsafe_allow_html=True)
+                st.header("Your Core Numbers")
+                num_col1, num_col2, num_col3, num_col4 = st.columns(4)
+                num_col1.metric("Psychic Number", psychic, help="Represents your inner self and basic character.")
+                num_col2.metric("Destiny Number", destiny, help="Represents your life's purpose and path.")
+                num_col3.metric("Name Number", name_number, help="Represents your talents and mode of expression.")
+                num_col4.metric("Kua Number", kua, help="Represents your personal energy and compatibility.")
+                st.markdown('</div>', unsafe_allow_html=True)
 
-                    grid_col, plane_col = st.columns([1, 1])
-                    with grid_col:
-                        st.subheader("Lo Shu Grid")
-                        st.dataframe(grid_df)
-                    
-                    with plane_col:
-                        st.subheader("Completed Planes")
-                        if planes:
-                            for plane in planes:
-                                st.success(f"✓ {plane}")
-                        else:
-                            st.info("No completed planes found in your chart.")
+                # --- Display Grid and Planes in separate cards ---
+                grid_col, plane_col = st.columns([1, 1])
+                with grid_col:
+                    st.markdown('<div class="card">', unsafe_allow_html=True)
+                    st.header("Your Lo Shu Grid")
+                    grid_html = create_grid_html(counts)
+                    st.markdown(grid_html, unsafe_allow_html=True)
+                    st.markdown('</div>', unsafe_allow_html=True)
+                
+                with plane_col:
+                    st.markdown('<div class="card" style="height: 100%;">', unsafe_allow_html=True)
+                    st.header("Completed Planes")
+                    if planes:
+                        for plane in planes:
+                            st.success(f"✓ {plane}")
+                    else:
+                        st.info("No completed planes found. This highlights unique areas for growth and focus!")
+                    st.markdown('</div>', unsafe_allow_html=True)
 
-                # --- Generate and Display AI Interpretation ---
-                with st.container():
-                    st.markdown("---")
-                    st.header("Your Detailed Numerology Reading")
-                    
-                    # Call the backend function to get the AI interpretation
-                    interpretation = LoShu_backend.generate_interpretation(
-                        name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
-                    )
-                    st.write(interpretation)
+                # --- Generate and Display AI Interpretation in a Card ---
+                st.markdown('<div class="card">', unsafe_allow_html=True)
+                st.header("Your Detailed Numerology Reading")
+                interpretation = backend.generate_interpretation(
+                    name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
+                )
+                st.markdown(interpretation)
+                st.markdown('</div>', unsafe_allow_html=True)
 
         except ValueError:
             st.error("Invalid date. Please check the day, month, and year.")
         except Exception as e:
-            st.error(f"An unexpected error occurred: {e}")
+            st.error(f"An unexpected error occurred. Please ensure your API key is correctly configured. Error: {e}")
+
+
+# --- Sidebar Configuration ---
 
 st.sidebar.title("About")
 st.sidebar.info("""
