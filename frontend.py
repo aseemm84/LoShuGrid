@@ -8,7 +8,7 @@ st.set_page_config(
     page_title="Lo Shu Grid Numerology",
     layout="wide",
     initial_sidebar_state="collapsed",
-    page_icon = 
+    page_icon = "🔮",
 )
 
 # --- Custom CSS for Styling ---
