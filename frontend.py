@@ -133,7 +133,7 @@ def create_grid_html(counts):
 
 # --- UI Layout ---
 
-st.title("AI Powered Lo Shu Grid Numerology Calculator")
+st.title("🔮 AI Powered Lo Shu Grid Numerology Calculator")
 st.write("") # Spacer
 
 # --- Input Form ---
@@ -154,7 +154,7 @@ with st.container():
     # Center the button
     button_col = st.columns([2, 1, 2])
     with button_col[1]:
-        submit_button = st.button("Create Lo Shu Grid")
+        submit_button = st.button("Create Lo Shu Grid ⊞")
 
 
 # --- Processing and Output ---
@@ -184,14 +184,14 @@ if submit_button:
                 grid_col, plane_col = st.columns([1, 1])
                 with grid_col:
                     st.markdown('<div class="card">', unsafe_allow_html=True)
-                    st.header("Your Lo Shu Grid")
+                    st.header("Your Lo Shu Grid ⊞")
                     grid_html = create_grid_html(counts)
                     st.markdown(grid_html, unsafe_allow_html=True)
                     st.markdown('</div>', unsafe_allow_html=True)
                 
                 with plane_col:
                     st.markdown('<div class="card" style="height: 100%;">', unsafe_allow_html=True)
-                    st.header("Completed Planes")
+                    st.header("Completed Planes ▦")
                     if planes:
                         for plane in planes:
                             st.success(f"✓ {plane}")
@@ -201,7 +201,7 @@ if submit_button:
 
                 # --- Generate and Display AI Interpretation in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
-                st.header("Your Detailed Numerology Reading")
+                st.header("Your Detailed Numerology Reading ☯")
                 interpretation = LoShu_backend.generate_interpretation(
                     name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
                 )
