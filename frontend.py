@@ -164,12 +164,12 @@ if submit_button:
     else:
         try:
             datetime(year, month, day)
-            
+
             with st.spinner("Analyzing the cosmos for your report... This may take a moment."):
                 # --- Backend Calculations ---
                 counts, psychic, destiny, kua, name_number = LoShu_backend.calculate_numbers(name, day, month, year, gender)
-                planes = LoShu_backend.check_planes(counts)
-                
+                completed_planes, incomplete_planes = LoShu_backend.check_planes(counts)
+
                 # --- Display Core Numbers in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
                 st.header("Your Core Numbers")
@@ -188,9 +188,11 @@ if submit_button:
                     grid_html = create_grid_html(counts)
                     st.markdown(grid_html, unsafe_allow_html=True)
                     st.markdown('</div>', unsafe_allow_html=True)
-                
+
                 with plane_col:
                     st.markdown('<div class="card" style="height: 100%;">', unsafe_allow_html=True)
+                    st.header("Planes Analysis ▦")
+
                     st.subheader("Completed Planes")
                     if completed_planes:
                         for plane in completed_planes:
@@ -205,7 +207,9 @@ if submit_button:
                     else:
                         st.balloons()
                         st.success("Congratulations! All planes are complete!")
+
                     st.markdown('</div>', unsafe_allow_html=True)
+
 
                 # --- Generate and Display AI Interpretation in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
