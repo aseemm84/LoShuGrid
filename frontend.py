@@ -191,19 +191,27 @@ if submit_button:
                 
                 with plane_col:
                     st.markdown('<div class="card" style="height: 100%;">', unsafe_allow_html=True)
-                    st.header("Completed Planes ▦")
-                    if planes:
-                        for plane in planes:
+                    st.subheader("Completed Planes")
+                    if completed_planes:
+                        for plane in completed_planes:
                             st.success(f"✓ {plane}")
                     else:
-                        st.info("No completed planes found. This highlights unique areas for growth and focus!")
+                        st.info("No completed planes found.")
+
+                    st.subheader("Incomplete Planes")
+                    if incomplete_planes:
+                        for plane in incomplete_planes:
+                            st.error(f"✗ {plane}")
+                    else:
+                        st.balloons()
+                        st.success("Congratulations! All planes are complete!")
                     st.markdown('</div>', unsafe_allow_html=True)
 
                 # --- Generate and Display AI Interpretation in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
                 st.header("Your Detailed Numerology Reading ☯")
                 interpretation = LoShu_backend.generate_interpretation(
-                    name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes
+                    name, day, month, year, gender, psychic, destiny, kua, name_number, counts, completed_planes, incomplete_planes
                 )
                 st.markdown(interpretation)
                 st.markdown('</div>', unsafe_allow_html=True)
