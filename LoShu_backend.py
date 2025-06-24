@@ -157,7 +157,7 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         - Incomplete Planes: {incomplete_planes_str}
 
         **Analysis Request:**
-        Please provide a comprehensive reading covering the following aspects, ensuring the analysis of planes is based on the provided 'Completed Planes' and 'Incomplete Planes' lists.
+        Please provide a comprehensive reading covering the following aspects, ensuring the analysis of planes is based on the provided 'Completed Planes' {completed_planes_str} and 'Incomplete Planes' {incomplete_planes_str} lists.
 
         ## 1. Individual Squares Analysis
 For each square (1–9), provide:
@@ -237,6 +237,7 @@ Conclude with an inspiring message that highlights the person’s soul mission, 
         "kua": kua,
         "name_number": name_number,
         "counts": counts,
-        "planes": planes
+        "completed_planes": completed_planes,
+        "incomplete_planes": incomplete_planes
         })
     return response.content
