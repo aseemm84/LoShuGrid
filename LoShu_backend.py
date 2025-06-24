@@ -131,7 +131,7 @@ def check_planes(counts):
 
 # --- AI Interpretation Function ---
 
-def generate_interpretation(name, day, month, year, gender, psychic, destiny, kua, name_number, counts, planes):
+def generate_interpretation(name, day, month, year, gender, psychic, destiny, kua, name_number, counts, completed_planes, incomplete_planes):
     """Fetches a numerological interpretation"""
     grid_data = ", ".join([f"{num} (appears {count} time{'s' if count > 1 else ''})" for num, count in counts.items() if count > 0])
     missing_numbers = ", ".join([str(num) for num, count in counts.items() if count == 0])
