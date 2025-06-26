@@ -138,7 +138,7 @@ def check_planes(counts):
 
 # --- AI Interpretation Function ---
 
-def generate_interpretation(name, day, month, year, gender, psychic, destiny, kua, name_number, counts, completed_planes, incomplete_planes):
+def generate_interpretation(name, day, month, year, gender, psychic, destiny, kua, name_number, curr_year_num, counts, completed_planes, incomplete_planes):
     """Fetches a numerological interpretation"""
     grid_data = ", ".join([f"{num} (appears {count} time{'s' if count > 1 else ''})" for num, count in counts.items() if count > 0])
     missing_numbers = ", ".join([str(num) for num, count in counts.items() if count == 0])
@@ -162,6 +162,7 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         - Missing Numbers: {missing_numbers or 'None'}
         - Completed Planes: {completed_planes_str}
         - Incomplete Planes: {incomplete_planes_str}
+        - Year Number (Current Year Number): {curr_year_num}
 
         **Analysis Request:**
         Please provide a comprehensive reading covering the following aspects, ensuring the analysis of planes is based on the provided 'Completed Planes' {completed_planes_str} and 'Incomplete Planes' {incomplete_planes_str} lists.
@@ -217,10 +218,16 @@ Summarize major life tests and potential breakthroughs, with targeted remedies a
 - Completed Planes: Analyze the unique talents, career advantages, and social impact based on the {completed_planes_str}.
 - Incomplete Planes: Provide remedies, daily rituals, and environmental adjustments (colors, directions, elements) for the {incomplete_planes_str}.
 
-## 6. Holistic Synthesis
+## 6. Current Year Analysis
+
+Perform the analysis of the current year based on the combination of current year number {curr_year_num} and destiny number {destiny}.
+Look at the planets associated with these numbers. Also look at the mutual friendship between these numbers and associated planets.
+Based on the analysis, predict the current year events, challenges and opportunities.
+
+## 7. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
 
-## 7. Action Plan & Affirmations
+## 8. Action Plan & Affirmations
 - **Immediate Steps (Next 30 Days):** Three concrete actions.
 - **Long-Term Goals (Next Year):** Major milestones aligned with numerology.
 - **Personal Mantras:** Two–three affirmations bespoke to the individual.
