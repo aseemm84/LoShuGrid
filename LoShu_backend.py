@@ -235,7 +235,7 @@ Summarise major life tests and potential breakthroughs, with targeted remedies a
 
 Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
 Look at the planets associated with these numbers. Additionally, consider the mutual synergy and enmity between these planets.
-Provide a detailed analysis in approximately 500 words for the current year's events, challenges, and opportunities in the following fields:
+Provide a very detailed and elaborate analysis for the current year's events, challenges, and opportunities in each of the following fields:
 - Health
 - Family
 - Education
