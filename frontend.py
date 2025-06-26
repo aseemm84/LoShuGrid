@@ -169,6 +169,7 @@ if submit_button:
                 # --- Backend Calculations ---
                 counts, psychic, destiny, kua, name_number = LoShu_backend.calculate_numbers(name, day, month, year, gender)
                 completed_planes, incomplete_planes = LoShu_backend.check_planes(counts)
+                curr_year_num = LoShu_backend.year_number(day, month)
 
                 # --- Display Core Numbers in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
