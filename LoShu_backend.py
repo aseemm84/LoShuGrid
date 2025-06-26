@@ -231,7 +231,7 @@ Integrate all numbers into a cohesive life-purpose narrative, illustrating how s
 ## 8. Action Plan & Affirmations
 - **Immediate Steps (Next 30 Days):** Three concrete actions.
 - **Long-Term Goals (Next Year):** Major milestones aligned with numerology.
-- **Personal Mantras:** Two–three affirmations bespoke to the individual.
+- **Personal Mantras:** Two–three mantras based on the planets associated with weak or negative squares and planes to nullify the negativity.
 
 ## Final Wisdom
 Conclude with an inspiring message that highlights the person’s soul mission, unique gifts, and the pathways to a fulfilling, balanced life.
