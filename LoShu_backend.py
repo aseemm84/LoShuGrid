@@ -147,8 +147,8 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
     incomplete_planes_str = ", ".join(incomplete_planes) if incomplete_planes else 'None'
     
     template = f"""
-        You are a master numerologist with deep expertise in Lo Shu Grid analysis, Chinese metaphysics, and Vedic numerology. Provide a detailed, insightful, and holistic analysis of a person's complete numerological profile based ONLY on the data provided. Do not invent or assume any information.
-        Write in a warm, encouraging, and empowering tone with clear structure using ## for main headings and ### for sub-headings. Use plain text without markdown bolding.
+        You are a master numerologist with deep expertise in Lo Shu Grid analysis, Chinese metaphysics, and Vedic numerology. Provide a detailed, insightful, and holistic analysis of a person's complete numerological profile based ONLY on the data provided. Please don't invent or assume any information.
+        Write in a warm, encouraging, and empowering tone, using clear structure with main headings marked as ## and subheadings marked as ###. Use plain text without markdown bolding.
 
 
         **Person's Data:**
@@ -171,18 +171,17 @@ def generate_interpretation(name, day, month, year, gender, psychic, destiny, ku
         ## 1. Individual Squares Analysis
 For each square (1–9), provide:
 ### Square
-- Planet, Element, Direction, Season, Symbolic Colors
+- Planet, Element, Direction, Season, Symbolic Colours
 - Life area (e.g., Wealth, Relationships, Creativity)
 - Strength level (based on count) and its influence
 - Real-life example or anecdote demonstrating this energy
 
 ## 2. Plane Significance
-### Analyze the person's {name} 
 
 ### Horizontal Planes (Mental, Emotional and Practical):
-Discuss completeness and strength, linking to memory, feelings, practical skills, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss completeness and strength, linking to memory, feelings, and practical skills, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 ### Vertical Planes (Thought, Will and Action)
-Analyze determination, planning, communication, and emotional expression, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Analyse determination, planning, communication, and emotional expression, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 ### Diagonal Planes (Determination, Compassion)
 Explain rare combinations, property success, fame, and how to harness them, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
@@ -194,7 +193,7 @@ Life purpose, karmic lessons, and ultimate goals.
 ### Name Number ({name_number})
 Talents, modes of expression, and professional potential.
 ### Kua Number ({kua})
-Personal energy type, favorable directions, compatible elements, and Feng Shui tips.
+Personal energy type, favourable directions, compatible elements, and Feng Shui tips.
 ### Discuss the combinations of these numbers based on the planets they govern and the mutual relationship of those planets.
 
 ## 4. Life Domains
@@ -203,21 +202,21 @@ Assess learning style, optimal study methods, and academic strengths.
 ### Career & Profession
 Identify suitable fields, work style, leadership qualities, and entrepreneurial potential.
 ### Finances & Wealth
-Evaluate money management, investment outlook, property and luxury inclinations, legal considerations.
+Evaluate money management, investment outlook, property and luxury inclinations, and legal considerations.
 ### Travel & Exploration
-Indicate favorable travel directions, how journeys support growth, and auspicious timing.
+Indicate favourable travel directions, how journeys support growth, and auspicious timing.
 ### Family & Relationships
-Examine marriage prospects, parenting style, interpersonal harmony, and children’s guidance.
+Examine marriage prospects, parenting style, interpersonal harmony, and the guidance of children.
 ### Health & Wellness
 Recommend routines, physical and mental health strategies, stress management, and longevity practices.
 ### Age-Related Phases
 Highlight life periods of opportunity and challenge based on numerological cycles.
 ### Challenges & Opportunities
-Summarize major life tests and potential breakthroughs, with targeted remedies and affirmations.
+Summarise major life tests and potential breakthroughs, with targeted remedies and affirmations.
 
 ## 5. Completed vs. Missing Planes
-- Completed Planes: Analyze the unique talents, career advantages, and social impact based on the {completed_planes_str}.
-- Incomplete Planes: Provide remedies, daily rituals, and environmental adjustments (colors, directions, elements) for the {incomplete_planes_str}.
+- Completed Planes: Analyse the unique talents, career advantages, and social impact based on the {completed_planes_str}.
+- Incomplete Planes: Provide remedies, daily rituals, and environmental adjustments (colours, directions, elements) for the {incomplete_planes_str}.
 
 ## 6. Current Year Analysis
 
