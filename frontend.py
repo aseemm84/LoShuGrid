@@ -216,7 +216,7 @@ if submit_button:
                 st.markdown('<div class="card">', unsafe_allow_html=True)
                 st.header("Your Detailed Numerology Reading ☯")
                 interpretation = LoShu_backend.generate_interpretation(
-                    name, day, month, year, gender, psychic, destiny, kua, name_number, counts, completed_planes, incomplete_planes
+                    name, day, month, year, gender, psychic, destiny, kua, name_number, curr_year_num, counts, completed_planes, incomplete_planes
                 )
                 st.markdown(interpretation)
                 st.markdown('</div>', unsafe_allow_html=True)
