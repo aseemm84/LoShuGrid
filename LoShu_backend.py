@@ -243,7 +243,7 @@ Integrate all numbers into a cohesive life-purpose narrative, illustrating how s
 ## 8. Action Plan & Affirmations
 - **Immediate Steps (Next 30 Days):** Three concrete actions.
 - **Long-Term Goals (Next Year):** Major milestones aligned with numerology.
-- **Personal Mantras:** Identify the squares (at least 3 to 4) which are relatively weak, negative or have missing numbers in the Lo Shu Grid. Identify planets associated with these weak, empty and negative squares. Get the beej mantras related to these planets and suggest these beej mantras to strengthen these weak, negative and missing squares. 
+- **Remedies:** Identify the squares (at least 3 to 4) which are relatively weak, negative or have missing numbers in the Lo Shu Grid. Identify planets associated with these weak, empty and negative squares. Suggest the remedies related to these planets (as per Vedic Astrology) to strengthen these weak, negative and missing squares. 
 
 ## Final Wisdom
 Conclude with an inspiring message that highlights the person’s soul mission, unique gifts, and the pathways to a fulfilling, balanced life.
