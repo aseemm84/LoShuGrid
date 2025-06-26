@@ -235,17 +235,23 @@ Summarise major life tests and potential breakthroughs, with targeted remedies a
 
 Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
 Look at the planets associated with these numbers. Additionally, consider the mutual synergy and enmity between these planets.
-Provide a detailed analysis of the current year's events, challenges, and opportunities for health, career, education, family, and finances.
+Provide a detailed analysis in approximately 500 words for the current year's events, challenges, and opportunities in the following fields:
+- Health
+- Family
+- Education
+- Career
+- Money and Savings
+- Overall Happiness
 
 ## 6. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
 
-## 8. Action Plan & Affirmations
+## 7. Action Plan & Affirmations
 - **Immediate Steps (Next 30 Days):** Three concrete actions.
 - **Long-Term Goals (Next Year):** Major milestones aligned with numerology.
 - **Remedies:** Identify the squares (at least 3 to 4) which are relatively weak, negative or have missing numbers in the Lo Shu Grid. Identify planets associated with these weak, empty and negative squares. Suggest the remedies related to these planets (as per Vedic Astrology) to strengthen these weak, negative and missing squares. 
 
-## Final Wisdom
+## 8. Final Wisdom
 Conclude with an inspiring message that highlights the person’s soul mission, unique gifts, and the pathways to a fulfilling, balanced life.
         **Final Wisdom:**
         Conclude with an inspiring message about their unique gifts, soul purpose, and the beautiful journey their numbers reveal.
