@@ -82,7 +82,7 @@ def calculate_numbers(name, day, month, year, gender):
     return counts, psychic, destiny, kua, name_number
 
 def year_number(day, month):
-    current_date = today()
+    current_date = datetime.date.now()
     current_year = current_date.year
     date_str = f"{day:02d}{month:02d}{current_year}"
     digits = [int(d) for d in date_str]
