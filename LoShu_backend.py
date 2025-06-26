@@ -221,9 +221,9 @@ Summarize major life tests and potential breakthroughs, with targeted remedies a
 
 ## 6. Current Year Analysis
 
-Perform the analysis of the current year based on the combination of current year number {curr_year_num} and destiny number {destiny}.
-Look at the planets associated with these numbers. Also look at the mutual friendship between these numbers and associated planets.
-Based on the analysis, predict the current year events, challenges and opportunities.
+Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
+Look at the planets associated with these numbers. Additionally, consider the mutual synergy between these planets.
+Based on the analysis, predict the current year's events, challenges and opportunities for health, career, education, family and finances.
 
 ## 7. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
@@ -231,7 +231,7 @@ Integrate all numbers into a cohesive life-purpose narrative, illustrating how s
 ## 8. Action Plan & Affirmations
 - **Immediate Steps (Next 30 Days):** Three concrete actions.
 - **Long-Term Goals (Next Year):** Major milestones aligned with numerology.
-- **Personal Mantras:** Suggest beej mantras for the planets associated with the weak, empty and negative squares.
+- **Personal Mantras:** Identify the squares (at least 3 to 4) which are relatively weak, negative or have missing numbers. Identify planets associated with these weak, empty and negative squares. Suggest beej mantras for these planets to strengthen these weak, negative and missing squares. 
 
 ## Final Wisdom
 Conclude with an inspiring message that highlights the person’s soul mission, unique gifts, and the pathways to a fulfilling, balanced life.
