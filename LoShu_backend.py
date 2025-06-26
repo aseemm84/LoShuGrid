@@ -178,12 +178,29 @@ For each square (1–9), provide:
 
 ## 2. Plane Significance
 
-### Horizontal Planes (Mental, Emotional and Practical):
-Discuss completeness and strength, linking to memory, feelings, and practical skills, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
-### Vertical Planes (Thought, Will and Action)
-Analyse determination, planning, communication, and emotional expression, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
-### Diagonal Planes (Determination, Compassion)
-Explain rare combinations, property success, fame, and how to harness them, based on whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+### Mental Plane (4-9-2):
+Discuss the intellect, logic, and analytical thinking based on the strength (count/ frequency of numbers in squares) of the Mental Plane (4-9-2) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Emotional Plane (3-5-7)
+Discuss the feelings, intuition, and emotional sensitivity based on the strength (count/ frequency of numbers in squares) of the Emotional Plane (3-5-7) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Practical Plane (8-1-6)
+Discuss the ability to manifest ideas in the material world based on the strength (count/ frequency of numbers in squares) of the Practical Plane (8-1-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Thought Plane (4-3-8)
+Discuss the ability to generate new ideas and to think in an orderly and methodical manner based on the strength (count/ frequency of numbers in squares) of the Thought Plane (4-3-8) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Will Plane (9-5-1)
+Discuss the willpower, persistence, and determination to achieve the goals based on the strength (count/ frequency of numbers in squares) of the Will Plane (9-5-1) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Action Plane (2-7-6)
+Discuss the ability to put their thoughts and plans into action based on the strength (count/ frequency of numbers in squares) of the Action Plane (2-7-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Determination Plane (4-5-6)
+Discuss the "Rajat Yog" and material assets, specifically land and property, based on the strength (count/ frequency of numbers in squares) of the Determination Plane (4-5-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+
+### Compassion Plane (2-5-8)
+Discuss the "Raj Yog" and success, wealth, name, and fame based on the strength (count/ frequency of numbers in squares) of the Determination Plane (4-5-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ## 3. Core Number Analysis
 ### Psychic Number ({psychic})
@@ -214,23 +231,19 @@ Highlight life periods of opportunity and challenge based on numerological cycle
 ### Challenges & Opportunities
 Summarise major life tests and potential breakthroughs, with targeted remedies and affirmations.
 
-## 5. Completed vs. Missing Planes
-- Completed Planes: Analyse the unique talents, career advantages, and social impact based on the {completed_planes_str}.
-- Incomplete Planes: Provide remedies, daily rituals, and environmental adjustments (colours, directions, elements) for the {incomplete_planes_str}.
-
-## 6. Current Year Analysis
+## 5. Current Year Analysis
 
 Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
-Look at the planets associated with these numbers. Additionally, consider the mutual synergy between these planets.
-Based on the analysis, predict the current year's events, challenges and opportunities for health, career, education, family and finances.
+Look at the planets associated with these numbers. Additionally, consider the mutual synergy and enmity between these planets.
+Provide a detailed analysis of the current year's events, challenges, and opportunities for health, career, education, family, and finances.
 
-## 7. Holistic Synthesis
+## 6. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
 
 ## 8. Action Plan & Affirmations
 - **Immediate Steps (Next 30 Days):** Three concrete actions.
 - **Long-Term Goals (Next Year):** Major milestones aligned with numerology.
-- **Personal Mantras:** Identify the squares (at least 3 to 4) which are relatively weak, negative or have missing numbers. Identify planets associated with these weak, empty and negative squares. Get the beej mantras related to these planets and suggest these beej mantras to strengthen these weak, negative and missing squares. 
+- **Personal Mantras:** Identify the squares (at least 3 to 4) which are relatively weak, negative or have missing numbers in the Lo Shu Grid. Identify planets associated with these weak, empty and negative squares. Get the beej mantras related to these planets and suggest these beej mantras to strengthen these weak, negative and missing squares. 
 
 ## Final Wisdom
 Conclude with an inspiring message that highlights the person’s soul mission, unique gifts, and the pathways to a fulfilling, balanced life.
@@ -250,6 +263,7 @@ Conclude with an inspiring message that highlights the person’s soul mission, 
         "destiny": destiny,
         "kua": kua,
         "name_number": name_number,
+        "curr_year_num": curr_year_num,
         "counts": counts,
         "completed_planes": completed_planes,
         "incomplete_planes": incomplete_planes
