@@ -269,12 +269,12 @@ Summarise major life challenges and potential breakthroughs, with targeted remed
 Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
 Look at the planets associated with these numbers. Additionally, consider the mutual synergy and enmity between these planets.
 Provide a very detailed and elaborate analysis for the current year's events, challenges, and opportunities in each of the following fields:
-- Health (discuss in at least 2-3 sentences)
-- Family & Relationships (discuss in at least 2-3 sentences)
-- Education (discuss in at least 2-3 sentences)
-- Career (discuss in at least 2-3 sentences)
-- Money and Savings (discuss in at least 2-3 sentences)
-- Overall Happiness (discuss in at least 2-3 sentences)
+- Health: discuss in detail in at least 200 words
+- Family & Relationships: discuss in detail in at least 200 words
+- Education: discuss in detail in at least 200 words
+- Career: discuss in detail in at least 200 words
+- Money and Savings: discuss in detail in at least 200 words
+- Overall Happiness: discuss in detail in at least 200 words
 
 ## 6. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
