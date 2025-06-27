@@ -179,69 +179,102 @@ For each square (1–9), provide:
 ## 2. Plane Significance
 
 ### Mental Plane (4-9-2):
-Discuss the intellect, logic, and analytical thinking based on the strength (count/ frequency of numbers in squares) of the Mental Plane (4-9-2) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the intellect, logic, and analytical thinking based on:
+- The strength (count/ frequency of each square) in the Mental Plane (4-9-2).
+- Whether the Mental Plane (4-9-2) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Emotional Plane (3-5-7)
-Discuss the feelings, intuition, and emotional sensitivity based on the strength (count/ frequency of numbers in squares) of the Emotional Plane (3-5-7) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the feelings, intuition, and emotional sensitivity based on:
+- The strength (count/ frequency of each square) in the Emotional Plane (3-5-7).
+- Whether the Emotional Plane (3-5-7) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Practical Plane (8-1-6)
-Discuss the ability to manifest ideas in the material world based on the strength (count/ frequency of numbers in squares) of the Practical Plane (8-1-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the ability to manifest ideas in the material world based on:
+- The strength (count/ frequency of each square) in the Practical Plane (8-1-6).
+- Whether the Practical Plane (8-1-6) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Thought Plane (4-3-8)
-Discuss the ability to generate new ideas and to think in an orderly and methodical manner based on the strength (count/ frequency of numbers in squares) of the Thought Plane (4-3-8) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the ability to generate new ideas and to think in an orderly and methodical manner based on:
+- The strength (count/ frequency of each square) in the Thought Plane (4-3-8).
+- Whether the Thought Plane (4-3-8) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Will Plane (9-5-1)
-Discuss the willpower, persistence, and determination to achieve the goals based on the strength (count/ frequency of numbers in squares) of the Will Plane (9-5-1) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the willpower, persistence, and determination to achieve the goals based on:
+- The strength (count/ frequency of each square) in the Will Plane (9-5-1).
+- Whether the Will Plane (9-5-1) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Action Plane (2-7-6)
-Discuss the ability to put their thoughts and plans into action based on the strength (count/ frequency of numbers in squares) of the Action Plane (2-7-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the ability to put their thoughts and plans into action based on:
+- The strength (count/ frequency of each square) in the Action Plane (2-7-6).
+- Whether the Action Plane (2-7-6) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Determination Plane (4-5-6)
-Discuss the "Rajat Yog" and material assets, specifically land and property, based on the strength (count/ frequency of numbers in squares) of the Determination Plane (4-5-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the "Rajat Yog" and material assets, specifically land and property, based on:
+- The strength (count/ frequency of each square) in the Determination Plane (4-5-6).
+- Whether the Determination Plane (4-5-6) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
 ### Compassion Plane (2-5-8)
-Discuss the "Raj Yog" and success, wealth, name, and fame based on the strength (count/ frequency of numbers in squares) of the Determination Plane (4-5-6) and whether the plane is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+Discuss the "Raj Yog" and success, wealth, name, and fame based on:
+- The strength (count/ frequency of each square) in the Compassion Plane (2-5-8).
+- Whether the Compassion Plane (2-5-8) is in the 'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
 
-## 3. Core Number Analysis
+## 3. Core Number Analysis for {name}
 ### Psychic Number ({psychic})
-Inner self, desires, and interpersonal perception.
+Discuss inner self, desires, and interpersonal perception based on the Psychic Number ({psychic}) and the planet associated with it.
 ### Destiny Number ({destiny})
-Life purpose, karmic lessons, and ultimate goals.
+Discuss life purpose, karmic lessons, and ultimate goals based on the Destiny Number ({destiny}) and the planet associated with it.
 ### Name Number ({name_number})
-Talents, modes of expression, and professional potential.
+Discuss talents, modes of expression, and professional potential based on the Name Number ({name_number}) and the planet associated with it.
 ### Kua Number ({kua})
-Personal energy type, favourable directions, compatible elements, and Feng Shui tips.
-### Discuss the combinations of these numbers based on the planets they govern and the mutual relationship of those planets.
+Discuss personal energy type, favourable directions, compatible elements, and Feng Shui tips based on the Kua Number ({kua}) and the planet associated with it.
+
+### Discuss the combinations of these numbers based on the planets they govern and the mutual relationship (synergy and enmity) of those planets.
 
 ## 4. Life Domains
 ### Education & Learning
-Assess learning style, optimal study methods, and academic strengths.
+Assess learning style, optimal study methods, and academic strengths based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Career & Profession
-Identify suitable fields, work style, leadership qualities, and entrepreneurial potential.
+Identify suitable fields, work style, leadership qualities, and entrepreneurial potential based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Finances & Wealth
-Evaluate money management, investment outlook, property and luxury inclinations, and legal considerations.
+Evaluate money management, investment outlook, property and luxury inclinations, and legal considerations based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Travel & Exploration
-Indicate favourable travel directions, how journeys support growth, and auspicious timing.
+Indicate favourable travel directions, how journeys support growth, and auspicious timing based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Family & Relationships
-Examine marriage prospects, parenting style, interpersonal harmony, and the guidance of children.
+Examine marriage prospects, parenting style, interpersonal harmony, and the guidance of children based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Health & Wellness
-Recommend routines, physical and mental health strategies, stress management, and longevity practices.
+Discuss critical health issues and recommend physical and mental health strategies, and longevity practices based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Age-Related Phases
-Highlight life periods of opportunity and challenge based on numerological cycles.
+Highlight life periods of opportunity and challenge as per numerological cycles based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 ### Challenges & Opportunities
-Summarise major life tests and potential breakthroughs, with targeted remedies and affirmations.
+Summarise major life challenges and potential breakthroughs, with targeted remedies and affirmations based on:
+-'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
+-Associated square strength in the Lo Shu Grid.
 
 ## 5. Current Year Analysis
 
 Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
 Look at the planets associated with these numbers. Additionally, consider the mutual synergy and enmity between these planets.
 Provide a very detailed and elaborate analysis for the current year's events, challenges, and opportunities in each of the following fields:
-- Health
-- Family
-- Education
-- Career
-- Money and Savings
-- Overall Happiness
+- Health (in 2-3 sentences)
+- Family & Relationships (in 2-3 sentences)
+- Education (in 2-3 sentences)
+- Career (in 2-3 sentences)
+- Money and Savings (in 2-3 sentences)
+- Overall Happiness (in 2-3 sentences)
 
 ## 6. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
