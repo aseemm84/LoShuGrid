@@ -234,47 +234,47 @@ Discuss personal energy type, favourable directions, compatible elements, and Fe
 ### Education & Learning
 Assess learning style, optimal study methods, and academic strengths based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Square 8: Strength of Square 8 in the Lo Shu Grid.
 ### Career & Profession
 Identify suitable fields, work style, leadership qualities, and entrepreneurial potential based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Square 1: Strength of Square 1 in the Lo Shu Grid.
 ### Finances & Wealth
 Evaluate money management, investment outlook, property and luxury inclinations, and legal considerations based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Square 4: Strength of Square 4 in the Lo Shu Grid.
 ### Travel & Exploration
 Indicate favourable travel directions, how journeys support growth, and auspicious timing based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Square 6: Strength of Square 6 in the Lo Shu Grid.
 ### Family & Relationships
-Examine marriage prospects, parenting style, interpersonal harmony, and the guidance of children based on:
+Examine married life, interpersonal harmony, and children based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Square 2: Strength of Square 2 in the Lo Shu Grid.
 ### Health & Wellness
 Discuss critical health issues and recommend physical and mental health strategies, and longevity practices based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Square 3: Strength of Square 3 in the Lo Shu Grid.
 ### Age-Related Phases
 Highlight life periods of opportunity and challenge as per numerological cycles based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Associated squares (Squares, 3, 6, 2, 7) strength in the Lo Shu Grid.
 ### Challenges & Opportunities
 Summarise major life challenges and potential breakthroughs, with targeted remedies and affirmations based on:
 -'Completed Planes' {completed_planes_str} or 'Incomplete Planes' {incomplete_planes_str} list.
--Associated square strength in the Lo Shu Grid.
+-Associated squares (Square 1 and Square 9) strength in the Lo Shu Grid.
 
 ## 5. Current Year Analysis
 
 Perform the analysis of the current year based on the combination of the current year number {curr_year_num} and the destiny number {destiny}.
 Look at the planets associated with these numbers. Additionally, consider the mutual synergy and enmity between these planets.
 Provide a very detailed and elaborate analysis for the current year's events, challenges, and opportunities in each of the following fields:
-- Health (in 2-3 sentences)
-- Family & Relationships (in 2-3 sentences)
-- Education (in 2-3 sentences)
-- Career (in 2-3 sentences)
-- Money and Savings (in 2-3 sentences)
-- Overall Happiness (in 2-3 sentences)
+- Health (discuss in at least 2-3 sentences)
+- Family & Relationships (discuss in at least 2-3 sentences)
+- Education (discuss in at least 2-3 sentences)
+- Career (discuss in at least 2-3 sentences)
+- Money and Savings (discuss in at least 2-3 sentences)
+- Overall Happiness (discuss in at least 2-3 sentences)
 
 ## 6. Holistic Synthesis
 Integrate all numbers into a cohesive life-purpose narrative, illustrating how strengths overcome gaps and how challenges become catalysts for growth.
