@@ -140,16 +140,16 @@ st.write("") # Spacer
 with st.container():
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
-        day = st.selectbox("Date of Birth", options=list(range(1, 32)), index=0)
+        day = st.selectbox("Date of Birth: Select from Dropdown", options=list(range(1, 32)), index=0)
     with col2:
-        month = st.selectbox("Month of Birth", options=list(range(1, 13)), index=0)
+        month = st.selectbox("Month of Birth: Select from Dropdown", options=list(range(1, 13)), index=0)
     with col3:
         current_year = datetime.now().year
-        year = st.number_input("Year of Birth", min_value=1900, max_value=datetime.now().year, value=2000, step=1)
+        year = st.number_input("Year of Birth: Type or Scroll", min_value=1900, max_value=datetime.now().year, value=2000, step=1)
     with col4:
-        gender = st.selectbox("Gender", options=["Male", "Female"])
+        gender = st.selectbox("Gender: Select from Dropdown", options=["Male", "Female"])
     with col5:
-        name = st.text_input("First Name", placeholder="Enter your first name")
+        name = st.text_input("First Name: Type", placeholder="Enter your first name")
 
     # Center the button
     button_col = st.columns([2, 1, 2])
