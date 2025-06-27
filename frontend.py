@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, date
 import LoShu_backend
 
 # --- Streamlit Page Configuration ---
@@ -170,6 +170,18 @@ if submit_button:
                 counts, psychic, destiny, kua, name_number = LoShu_backend.calculate_numbers(name, day, month, year, gender)
                 completed_planes, incomplete_planes = LoShu_backend.check_planes(counts)
                 curr_year_num = LoShu_backend.year_number(day, month)
+                today = date.today()
+                age = today.year - year - ((today.month, today.day) < (month, day))
+                dob = f"{day:02d}-{month:02d}-{year}"
+
+                # --- Display Personal Information in a Card ---
+                st.markdown('<div class="card">', unsafe_allow_html=True)
+                st.header("Personal Information")
+                info_col1, info_col2, info_col3 = st.columns(3)
+                info_col1.metric("Name", name)
+                info_col2.metric("Age", age)
+                info_col3.metric("Date of Birth", dob)
+                st.markdown('</div>', unsafe_allow_html=True)
 
                 # --- Display Core Numbers in a Card ---
                 st.markdown('<div class="card">', unsafe_allow_html=True)
